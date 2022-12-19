@@ -39,8 +39,6 @@ class SnakeGame:
         if rx - self.wFood//2 < cx < rx + self.wFood//2 and ry - self.hFood//2 < cy < ry + self.hFood//2:
             self.randomFoodLocation()
             self.allowedLength += 25
-
-        
         # تنقيص الطول 
         if self.currentLenght > self.allowedLength:
             for i , length in enumerate(self.length):
